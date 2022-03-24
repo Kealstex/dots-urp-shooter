@@ -782,6 +782,7 @@ GameObject:
   - component: {fileID: 1164006360}
   - component: {fileID: 1164006359}
   - component: {fileID: 1164006364}
+  - component: {fileID: 1164006365}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -909,6 +910,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AnimatorEntity: {fileID: 598413527}
+--- !u!114 &1164006365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164006358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a80d9f0548401aa320236e3a21e011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: 50
 --- !u!1 &1314286552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1192,7 @@ GameObject:
   - component: {fileID: 1759703496}
   - component: {fileID: 1759703495}
   - component: {fileID: 1759703494}
+  - component: {fileID: 1759703499}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -1290,6 +1305,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -159.512, z: 0}
+--- !u!114 &1759703499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759703493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a80d9f0548401aa320236e3a21e011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &1832608209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1446,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TT_demo_zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 034b7f0e039f1f043b6a1d73bd0e7234, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b14953694d54eea4eb66f453e525024c, type: 3}
 --- !u!1 &1835628899 stripped
