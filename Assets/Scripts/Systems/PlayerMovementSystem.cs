@@ -25,12 +25,12 @@ namespace Systems
             {
                 //Input value - [-1,1]
                 //Forward vector - is unit vector
-                float3 dir = transform.Forward * input.y * player.movementSpeed * deltaTime;
+                float3 dir = transform.Forward * input.y * player.MovementSpeed * deltaTime;
                 //movement speed + direction vector
-                dir.x += input.x * player.movementSpeed * deltaTime;
+                dir.x += input.x * player.MovementSpeed * deltaTime;
                 velocity.Linear += new float3(dir.x, 0f, dir.z);
                 //spin around speed 
-                velocity.Angular = new float3(0f, input.x * player.rotationSpeed * deltaTime, 0f);
+                velocity.Angular = new float3(0f, input.x * player.RotationSpeed * deltaTime, 0f);
             });
         }
     }
