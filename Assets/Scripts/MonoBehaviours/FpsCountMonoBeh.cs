@@ -4,7 +4,7 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DefaultNamespace
+namespace MonoBehaviours
 {
     public class FpsCountMonoBeh : MonoBehaviour
     {
