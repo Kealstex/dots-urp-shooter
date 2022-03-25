@@ -50,6 +50,7 @@ namespace Systems
         
         {
             stepPhysicsWorld = World.GetOrCreateSystem<StepPhysicsWorld>();
+            //System which buffer command and run them after all parallel threads
             endSimulationCommandBuffer = World.GetOrCreateSystem<EndSimulationEntityCommandBufferSystem>();
         }
         
@@ -60,6 +61,8 @@ namespace Systems
             job.healthRef = GetComponentDataFromEntity<HealthComponent>(isReadOnly: false);
             
             //Now Job.Schedule is deprecated 
+            
+            //Parallel Writer - for possibility to write from more that one thread
             var commandBuffer = endSimulationCommandBuffer.CreateCommandBuffer().AsParallelWriter();
             Entities.ForEach((Entity entity, int entityInQueryIndex,ref BulletComponent bullet) =>
             {

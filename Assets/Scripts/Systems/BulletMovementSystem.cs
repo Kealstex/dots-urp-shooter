@@ -3,7 +3,7 @@ using Unity.Entities;
 using Unity.Physics;
 namespace Systems
 {
-    public partial class BulletSystem : SystemBase
+    public partial class BulletMovementSystem : SystemBase
     {
         protected override void OnUpdate()
         {
