@@ -17,7 +17,7 @@ namespace Systems
                 targetPosition = transform.Position;
             });
             
-            Entities.ForEach((Entity entity, ref NavMeshAgentComponent agent) =>
+            Entities.ForEach((Entity entity, ref NavMeshAgentComponent agent, ref FollowPlayerComponent isFollow) =>
             {
                 var navMeshAgent = EntityManager.GetComponentObject<NavMeshAgent>(entity);
                 if (navMeshAgent != null)

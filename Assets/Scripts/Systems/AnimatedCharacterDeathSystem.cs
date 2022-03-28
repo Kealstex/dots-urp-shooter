@@ -11,9 +11,9 @@ namespace Systems
             {
                 if (health.Value <= 0)
                 {
-                    Debug.Log("SetAnimation");
                     var animator = EntityManager.GetComponentObject<Animator>(animatorComponent.AnimatorEntity);
                     animator.SetTrigger("die");
+                    EntityManager.RemoveComponent<FollowPlayerComponent>(entity);
                     EntityManager.RemoveComponent<HealthComponent>(entity);
                 }
             });
