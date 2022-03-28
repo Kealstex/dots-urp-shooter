@@ -17,10 +17,11 @@ namespace Systems
                 targetPosition = transform.Position;
             });
             
-            Entities.ForEach((Entity entity, ref NavMeshAgentComponent agent, ref FollowPlayerComponent isFollow) =>
+            Entities.ForEach((Entity entity, ref NavMeshAgentComponent agent, ref Parent parent) =>
             {
+                var isDeathAgent = !EntityManager.HasComponent<FollowPlayerComponent>(parent.Value);
                 var navMeshAgent = EntityManager.GetComponentObject<NavMeshAgent>(entity);
-                if (navMeshAgent != null)
+                if (navMeshAgent != null && !isDeathAgent)
                 {
                     navMeshAgent.SetDestination(targetPosition);
                     EntityManager.SetComponentData(agent.MoveEntity, new Translation{ Value = navMeshAgent.transform.position});

@@ -305,7 +305,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253812222}
-  m_LocalRotation: {x: 0.1891075, y: 0.00000003271879, z: -0.0000000063010623, w: 0.9819564}
+  m_LocalRotation: {x: 0.18910751, y: -6.3162773e-15, z: 1.2950366e-15, w: 0.9819564}
   m_LocalPosition: {x: 0, y: 6, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1875,7 +1875,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499099600}
-  m_LocalRotation: {x: 0.1891075, y: 0.00000003271879, z: -0.0000000063010623, w: 0.9819564}
+  m_LocalRotation: {x: 0.18910751, y: -6.3162773e-15, z: 1.2950366e-15, w: 0.9819564}
   m_LocalPosition: {x: 0, y: 6, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2068,9 +2068,9 @@ GameObject:
   - component: {fileID: 1759703497}
   - component: {fileID: 1759703496}
   - component: {fileID: 1759703495}
+  - component: {fileID: 1759703500}
   - component: {fileID: 1759703494}
   - component: {fileID: 1759703499}
-  - component: {fileID: 1759703500}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -2196,7 +2196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2a80d9f0548401aa320236e3a21e011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Value: 1
+  Value: 2
 --- !u!114 &1759703500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2209,7 +2209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faaad4fb76ea4ed7ab6bfd61379b7124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disabled: 0
 --- !u!1 &1778866173
 GameObject:
   m_ObjectHideFlags: 0
