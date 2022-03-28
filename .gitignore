@@ -12,6 +12,7 @@
 /Assets/Materials/Stands.meta
 /Assets/Prefabs/Stands.meta
 /Assets/TextMesh*Pro
+/Assets/StandsScripts/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -74,3 +75,6 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/StandsScripts.meta
+Assets/Scenes/Stands.unity
+Assets/Scenes/Stands.unity.meta
