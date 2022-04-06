@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Stands.unity
+    guid: 8f40699eca1d1914da192ddd1f151d2a
   m_configObjects: {}

@@ -29,14 +29,14 @@ namespace Editor
         [MenuItem("EditorsScript/CloneX10")]
         public static void CloneX()
         {
-            var cloneCount = 10;
+            var cloneCount = 100;
             cloneCount++;
             foreach (var obj in Selection.gameObjects)
             {
                 for (var i = 1; i < cloneCount; i++)
                 {
                     var newObj = Object.Instantiate(obj, obj.transform.parent);
-                    newObj.transform.position += new Vector3(1.01f*i, 0, 0);
+                    newObj.transform.position += new Vector3(2.01f*i, 0, 0);
                 }
 
             }
